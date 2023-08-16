@@ -73,6 +73,7 @@
 	android {
 		/delete-node/ vbmeta;
 		fstab {
+			compatible = "android,fstab";
 			vendor {
 				compatible = "android,vendor";
 				dev = "/dev/block/platform/soc/c0c4000.sdhci/by-name/vendor";
