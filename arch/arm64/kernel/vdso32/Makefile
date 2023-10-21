@@ -106,8 +106,8 @@ VDSO_CFLAGS += -Wno-int-to-pointer-cast
 VDSO_AFLAGS := $(VDSO_CAFLAGS)
 VDSO_AFLAGS += -D__ASSEMBLY__
 
-VDSO_CFLAGS += -march=armv8-a -mtune=cortex-a72.cortex-a53
-VDSO_AFLAGS += -march=armv8-a -mtune=cortex-a72.cortex-a53
+VDSO_CFLAGS += -march=armv8-a -mtune=cortex-a73.cortex-a53
+VDSO_AFLAGS += -march=armv8-a -mtune=cortex-a73.cortex-a53
 
 # Check for binutils support for dmb ishld
 dmbinstr := $(call cc32-as-instr,dmb ishld,-DCONFIG_AS_DMB_ISHLD=1)
