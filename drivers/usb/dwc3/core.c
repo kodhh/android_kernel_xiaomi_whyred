@@ -1670,6 +1670,8 @@ static int dwc3_remove(struct platform_device *pdev)
 	count--;
 	dwc3_instance[dwc->index] = NULL;
 
+	dma_set_max_seg_size(dev, UINT_MAX);
+
 	return 0;
 }
 
